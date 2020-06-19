@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.2.1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44000,8634878819" ReportOptions.Description.Text="" ReportOptions.LastChange="44000,9350567361" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" PageCount="2" Frame.Color="536870911" Frame.Typ="0" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="67,67718" Left="0" Top="18,89765" Width="1046,92981">
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="302,5" Top="7,5" Width="434,48825" Height="36,39765" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Relatótio de Clientes X Contratos"/>
+      <TfrxMemoView Name="Memo10" AllowVectorExport="True" Left="816" Top="31,10235" Width="228,23825" Height="18,89765" AllowHTMLTags="True" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Color="536870911" Frame.Typ="15" HAlign="haRight" ParentFont="False" Text="&#60;b&#62;Data:&#60;/b&#62; [Date] &#60;font color=red&#62; [Time] &#60;/font&#62;">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo11" AllowVectorExport="True" Left="870,14765" Top="9,85235" Width="165,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[Page#] de [TotalPages#]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="28,89765" Left="0" Top="200,31509" Width="1046,92981" ColumnWidth="0" ColumnGap="0" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" RowCount="0">
+      <TfrxMemoView Name="Memo12" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="1046,92981" Height="28,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Color="536870911" Frame.Typ="15" HAlign="haRight" Highlight.Font.Charset="1" Highlight.Font.Color="255" Highlight.Font.Height="-13" Highlight.Font.Name="Arial" Highlight.Font.Style="0" Highlight.Condition="&#60;Line#&#62; mod 2 = 0" Highlight.FillType="ftBrush" Highlight.Fill.BackColor="15000804" Highlight.Frame.Typ="0" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="frxdtsClienteContratoCODIGO" IndexTag="1" AllowVectorExport="True" Left="12,5" Top="3,63389" Width="75,56107" Height="18,89765" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Frame.Typ="0" Highlight.Font.Charset="1" Highlight.Font.Color="255" Highlight.Font.Height="-13" Highlight.Font.Name="Arial" Highlight.Font.Style="0" Highlight.Condition="&#60;frxdtsClienteContrato.&#34;ENDERECOUF&#34;&#62; &#60;&#62; 'MT'" Highlight.FillType="ftBrush" Highlight.Fill.BackColor="13434879" Highlight.Frame.Typ="0" Text="[frxdtsClienteContrato.&#34;CODIGO&#34;]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoNOME" IndexTag="1" AllowVectorExport="True" Left="103,25" Top="4,88389" Width="184,13018" Height="18,89765" Frame.Typ="0" Text="[Copy(&#60;frxdtsClienteContrato.&#34;NOME&#34;&#62;,1,20)]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoEMAIL" IndexTag="1" AllowVectorExport="True" Left="298" Top="4,88389" Width="214,63018" Height="18,89765" DataField="EMAIL" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Frame.Typ="0" Text="[frxdtsClienteContrato.&#34;EMAIL&#34;]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoENDERECOCIDADE" IndexTag="1" AllowVectorExport="True" Left="523,75" Top="4,88389" Width="179,26005" Height="18,89765" DataField="ENDERECOCIDADE" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Frame.Typ="0" Text="[frxdtsClienteContrato.&#34;ENDERECOCIDADE&#34;]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoENDERECOUF" IndexTag="1" AllowVectorExport="True" Left="714,5" Top="4,88389" Width="42,11812" Height="18,89765" DataField="ENDERECOUF" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Frame.Typ="0" Text="[frxdtsClienteContrato.&#34;ENDERECOUF&#34;]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoVALORTOTAL" IndexTag="1" AllowVectorExport="True" Left="900,75" Top="4,88389" Width="138,6812" Height="18,89765" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxdtsClienteContrato.&#34;VALORTOTAL&#34;]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoDATAOPERACAO" IndexTag="1" AllowVectorExport="True" Left="766,25" Top="4,88389" Width="120,87616" Height="18,89765" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" DisplayFormat.FormatStr="mm/yyyy" DisplayFormat.Kind="fkDateTime" Frame.Typ="0" Text="[frxdtsClienteContrato.&#34;DATAOPERACAO&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="291,02381" Width="1046,92981">
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="636,2701" Top="2" Width="165,5906" Height="18,89765" Frame.Typ="0" HAlign="haRight" Text="[Page#] de [TotalPages#]"/>
+      <TfrxLineView Name="Line2" AllowVectorExport="True" Left="5" Top="1,33055" Width="1038,75" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxPageFooter>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="30,54329" Left="0" Top="109,60637" Width="1046,92981">
+      <TfrxShapeView Name="Shape1" AllowVectorExport="True" Left="2,5" Top="0,99799" Width="1038,23825" Height="28,92718" Fill.BackColor="10218495" Frame.Typ="0"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="92" Top="4" Width="195,38018" Height="18,89765" Frame.Typ="0" Text="NOME"/>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="11,25" Top="4" Width="71,81107" Height="18,89765" Frame.Typ="0" Text="CODIGO"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="298" Top="4" Width="214,63018" Height="18,89765" Frame.Typ="0" Text="EMAIL"/>
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="523,75" Top="4" Width="179,26005" Height="18,89765" Frame.Typ="0" Text="ENDERECOCIDADE"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="714,5" Top="4" Width="42,11812" Height="18,89765" Frame.Typ="0" Text="ENDERECOUF"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="900,75" Top="4" Width="138,6812" Height="18,89765" Frame.Typ="0" Text="VALORTOTAL"/>
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="767,5" Top="4" Width="120,87616" Height="18,89765" Frame.Typ="0" Text="DATAOPERACAO"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>
