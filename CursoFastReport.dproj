@@ -104,8 +104,8 @@
             <Form>frmPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Fastreport.Module.pas">
-            <Form>dmdModule</Form>
+        <DCCReference Include="Fastreport.Relatorio.pas">
+            <Form>dmdRelatorio</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>

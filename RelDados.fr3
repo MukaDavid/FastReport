@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="RelBase.fr3" ReportOptions.CreateDate="44001,9466213657" ReportOptions.LastChange="44001,9511080903" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxdtsDados" DataSetName="frxdtsDados"/>
+  </Datasets>
+  <Variables>
+    <item InheritedName=" Geral"/>
+    <item InheritedName="Titulo"/>
+  </Variables>
+  <inherited Name="Data"/>
+  <inherited Name="Page1" Orientation="poPortrait" PaperWidth="210" PaperHeight="297" PaperSize="9">
+    <inherited Name="ReportTitle1" Width="718,1107">
+      <inherited Name="Memo4" Width="718,1107"/>
+      <inherited Name="Picture1"/>
+      <inherited Name="Memo2"/>
+      <inherited Name="Memo3"/>
+      <inherited Name="Memo5">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+      <inherited Name="Line1"/>
+    </inherited>
+    <inherited Name="MasterData1" Top="257,00804" Width="718,1107" DataSet="frxdtsDados" DataSetName="frxdtsDados">
+      <TfrxMemoView Name="frxdtsDadosNome" IndexTag="1" AllowVectorExport="True" Left="22,5" Top="1,88961" Width="158,74026" Height="18,89765" DataField="Nome" DataSet="frxdtsDados" DataSetName="frxdtsDados" Frame.Typ="0" Text="[frxdtsDados.&#34;Nome&#34;]"/>
+      <TfrxMemoView Name="frxdtsDadosData" IndexTag="1" AllowVectorExport="True" Left="196,25" Top="1,88961" Width="143,62214" Height="18,89765" DataField="Data" DataSet="frxdtsDados" DataSetName="frxdtsDados" Frame.Typ="0" Text="[frxdtsDados.&#34;Data&#34;]"/>
+      <TfrxMemoView Name="frxdtsDadosIndice" IndexTag="1" AllowVectorExport="True" Left="355" Top="1,88961" Width="79,37013" Height="18,89765" DataField="Indice" DataSet="frxdtsDados" DataSetName="frxdtsDados" Frame.Typ="0" Text="[frxdtsDados.&#34;Indice&#34;]"/>
+    </inherited>
+    <inherited Name="PageFooter1" Top="340,1577" Width="718,1107">
+      <inherited Name="Memo1"/>
+    </inherited>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="173,85838" Width="718,1107">
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="22,5" Top="1,14162" Width="158,74026" Height="18,89765" Frame.Typ="0" Text="Nome"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="196,25" Top="1,14162" Width="143,62214" Height="18,89765" Frame.Typ="0" Text="Data"/>
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="355" Top="1,14162" Width="79,37013" Height="18,89765" Frame.Typ="0" Text="Indice"/>
+    </TfrxPageHeader>
+  </inherited>
+</inherited>

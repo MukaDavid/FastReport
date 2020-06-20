@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="RelBase.fr3" ReportOptions.CreateDate="44001,9073329861" ReportOptions.LastChange="44001,9191008681" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxdtsClientes" DataSetName="frxdtsClientes"/>
+    <item DataSet="frxdtsEmpreendimentos" DataSetName="frxdtsEmpreendimentos"/>
+  </Datasets>
+  <inherited Name="Data"/>
+  <inherited Name="Page1" PaperSize="9">
+    <inherited Name="ReportTitle1">
+      <inherited Name="Memo4"/>
+      <inherited Name="Picture1"/>
+      <inherited Name="Memo2"/>
+      <inherited Name="Memo3"/>
+      <inherited Name="Memo5">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+      <inherited Name="Line1"/>
+    </inherited>
+    <inherited Name="MasterData1" DataSet="frxdtsClientes" DataSetName="frxdtsClientes">
+      <TfrxMemoView Name="frxdtsClientesID" IndexTag="1" AllowVectorExport="True" Left="21,25" Top="1,09632" Width="79,37013" Height="18,89765" DataField="ID" DataSet="frxdtsClientes" DataSetName="frxdtsClientes" Frame.Typ="0" Text="[frxdtsClientes.&#34;ID&#34;]"/>
+      <TfrxMemoView Name="frxdtsClientesCLIENTENOME" IndexTag="1" AllowVectorExport="True" Left="111,5" Top="0,84632" Width="349,38018" Height="18,89765" DataField="CLIENTENOME" DataSet="frxdtsClientes" DataSetName="frxdtsClientes" Frame.Typ="0" Text="[frxdtsClientes.&#34;CLIENTENOME&#34;]"/>
+    </inherited>
+    <inherited Name="PageFooter1" Top="449,76407">
+      <inherited Name="Memo1"/>
+    </inherited>
+    <TfrxDetailData Name="DetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="257,00804" Width="1046,92981" ColumnWidth="0" ColumnGap="0" DataSet="frxdtsEmpreendimentos" DataSetName="frxdtsEmpreendimentos" RowCount="0">
+      <TfrxMemoView Name="frxdtsEmpreendimentosCLIENTES_ID" IndexTag="1" AllowVectorExport="True" Left="58,75" Top="1,74196" Width="79,37013" Height="18,89765" DataField="CLIENTES_ID" DataSet="frxdtsEmpreendimentos" DataSetName="frxdtsEmpreendimentos" Frame.Typ="0" Text="[frxdtsEmpreendimentos.&#34;CLIENTES_ID&#34;]"/>
+      <TfrxMemoView Name="frxdtsEmpreendimentosEMPREENDIMENTONOME" IndexTag="1" AllowVectorExport="True" Left="148,75" Top="0,49196" Width="400,63018" Height="18,89765" DataField="EMPREENDIMENTONOME" DataSet="frxdtsEmpreendimentos" DataSetName="frxdtsEmpreendimentos" Frame.Typ="0" Text="[frxdtsEmpreendimentos.&#34;EMPREENDIMENTONOME&#34;]"/>
+    </TfrxDetailData>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" Height="42,67718" Left="0" ParentFont="False" Top="347,71676" Width="1046,92981">
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="612,5" Top="17,3876" Width="358,23825" Height="18,89765" Frame.Typ="0" Text="Total de Empreendimentos [COUNT(DetailData1)]"/>
+    </TfrxFooter>
+    <TfrxSubdetailData Name="SubdetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="302,3624" Width="1046,92981" ColumnWidth="0" ColumnGap="0" RowCount="0"/>
+  </inherited>
+</inherited>

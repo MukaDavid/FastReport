@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="RelBase.fr3" ReportOptions.CreateDate="44001,832277581" ReportOptions.LastChange="44001,8480831134" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato"/>
+  </Datasets>
+  <inherited Name="Data"/>
+  <inherited Name="Page1" PaperSize="9">
+    <inherited Name="ReportTitle1">
+      <inherited Name="Memo4"/>
+      <inherited Name="Picture1"/>
+      <inherited Name="Memo2"/>
+      <inherited Name="Memo3"/>
+      <inherited Name="Memo5">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+      <inherited Name="Line1"/>
+    </inherited>
+    <inherited Name="MasterData1" Height="102,67718" Top="257,00804" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Stretched="True">
+      <TfrxMemoView Name="frxdtsClienteContratoENDERECOUF" IndexTag="1" AllowVectorExport="True" Left="23,75" Top="5,84632" Width="52,61812" Height="18,89765" DataField="ENDERECOUF" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxdtsClienteContrato.&#34;ENDERECOUF&#34;]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoCODIGO" IndexTag="1" AllowVectorExport="True" Left="87,5" Top="5,84632" Width="71,81107" Height="18,89765" DataField="CODIGO" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxdtsClienteContrato.&#34;CODIGO&#34;]"/>
+      <TfrxMemoView Name="frxdtsClienteContratoNOME" IndexTag="1" AllowVectorExport="True" Left="171,25" Top="5,84632" Width="400,63018" Height="18,89765" DataField="NOME" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxdtsClienteContrato.&#34;NOME&#34;]"/>
+    </inherited>
+    <inherited Name="PageFooter1" Top="419,52783">
+      <inherited Name="Memo1"/>
+    </inherited>
+    <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="211,65368" Width="1046,92981" Condition="&#60;frxdtsClienteContrato.&#34;ENDERECOUF&#34;&#62;+&#60;frxdtsClienteContrato.&#34;ENDERECOCIDADE&#34;&#62;" DrillDown="True" ExpandDrillDown="True" KeepTogether="True">
+      <TfrxShapeView Name="Shape1" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="1046,92981" Height="22,67718" Fill.BackColor="15000804" Frame.Typ="0"/>
+      <TfrxMemoView Name="frxdtsClienteContratoENDERECOUF1" IndexTag="1" AllowVectorExport="True" Left="12,5" Top="1,34632" Width="747,61812" Height="18,89765" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Font.Charset="1" Font.Color="255" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[&#60;frxdtsClienteContrato.&#34;ENDERECOUF&#34;&#62; +' - '+&#60;frxdtsClienteContrato.&#34;ENDERECOCIDADE&#34;&#62; ]"/>
+    </TfrxGroupHeader>
+  </inherited>
+</inherited>
