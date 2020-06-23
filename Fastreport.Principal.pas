@@ -15,9 +15,8 @@ type
     btnRelClienteContratoSelecionado: TButton;
     btnRelTotaoContratosUF: TButton;
     Memo1: TMemo;
-    Button1: TButton;
+    BtnRelDadosCSV: TButton;
     DBGrid1: TDBGrid;
-    dscDados: TDataSource;
     ClientDataSet1: TClientDataSet;
     DataSetProvider1: TDataSetProvider;
     DBGrid2: TDBGrid;
@@ -30,13 +29,15 @@ type
     ClientDataSet1VALORTOTAL: TFMTBCDField;
     ClientDataSet1DATAOPERACAO: TSQLTimeStampField;
     ClientDataSet1TotalUf: TAggregateField;
+    Button1: TButton;
     procedure btnRelClienteClick(Sender: TObject);
     procedure btnRelClienteContratoPDFClick(Sender: TObject);
     procedure btnRelClienteContratoClick(Sender: TObject);
     procedure btnRelClienteContratoSelecionadoClick(Sender: TObject);
     procedure btnRelTotaoContratosUFClick(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure BtnRelDadosCSVClick(Sender: TObject);
     procedure DBGrid1TitleClick(Column: TColumn);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -85,6 +86,11 @@ end;
 
 procedure TfrmPrincipal.Button1Click(Sender: TObject);
 begin
+  dmdRelatorio.GerarRelatorio('..\..\RelEmprendimentosContratos.fr3', 'Empreendimentos x Contrato');
+end;
+
+procedure TfrmPrincipal.BtnRelDadosCSVClick(Sender: TObject);
+begin
   Memo1.Lines.Clear;
   Memo1.Lines.LoadFromFile('..\..\dados.txt');
 
@@ -98,5 +104,6 @@ procedure TfrmPrincipal.DBGrid1TitleClick(Column: TColumn);
 begin
   dmdRelatorio.cdsDados.IndexFieldNames := Column.FieldName;
 end;
+
 
 end.

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="RelBase.fr3" ReportOptions.CreateDate="44004,9170029051" ReportOptions.LastChange="44004,9432573264" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxdtsClientes" DataSetName="frxdtsClientes"/>
+    <item DataSet="frxdtsContrato" DataSetName="frxdtsContrato"/>
+    <item DataSet="frxdtsEmpreendimentos" DataSetName="frxdtsEmpreendimentos"/>
+  </Datasets>
+  <Variables>
+    <item InheritedName=" Geral"/>
+    <item InheritedName="Titulo"/>
+  </Variables>
+  <inherited Name="Data"/>
+  <inherited Name="Page1" Orientation="poPortrait" PaperWidth="210" PaperHeight="297" PaperSize="9">
+    <inherited Name="ReportTitle1" Width="718,1107">
+      <inherited Name="Memo4" Width="718,1107"/>
+      <inherited Name="Picture1"/>
+      <inherited Name="Memo2"/>
+      <inherited Name="Memo3"/>
+      <inherited Name="Memo5" Left="454,3607">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+      <inherited Name="Line1"/>
+    </inherited>
+    <inherited Name="MasterData1" Height="120,17718" Width="718,1107" Child="Child1" DataSet="frxdtsClientes" DataSetName="frxdtsClientes" Stretched="True">
+      <TfrxMemoView Name="frxdtsClientesCLIENTECODIGOINTERNO" IndexTag="1" AllowVectorExport="True" Left="13,25" Top="30,99397" Width="71,81107" Height="18,89765" DataField="CLIENTECODIGOINTERNO" DataSet="frxdtsClientes" DataSetName="frxdtsClientes" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="9" ParentFont="False" Text="[frxdtsClientes.&#34;CLIENTECODIGOINTERNO&#34;]"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="13,25" Top="10,84632" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="5" ParentFont="False" Text="Código"/>
+      <TfrxMemoView Name="frxdtsClientesCLIENTENOME" IndexTag="1" AllowVectorExport="True" Left="86,5" Top="30,99397" Width="245,65971" Height="18,89765" DataField="CLIENTENOME" DataSet="frxdtsClientes" DataSetName="frxdtsClientes" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" ParentFont="False" Text="[frxdtsClientes.&#34;CLIENTENOME&#34;]"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="86,5" Top="10,84632" Width="245,65971" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="6" ParentFont="False" Text="Nome"/>
+      <TfrxSubreport Name="Subreport1" AllowVectorExport="True" Left="10,75" Top="60,09632" Width="316,98825" Height="43,89765" Page="Page2"/>
+      <TfrxSubreport Name="Subreport2" AllowVectorExport="True" Left="380" Top="10,84632" Width="315" Height="96,25" Page="Page3"/>
+    </inherited>
+    <inherited Name="PageFooter1" Top="438,42548" Width="718,1107">
+      <inherited Name="Memo1"/>
+    </inherited>
+    <TfrxChild Name="Child1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="355,27582" Width="718,1107" ToNRows="0" ToNRowsMode="rmCount">
+      <TfrxShapeView Name="Shape1" AllowVectorExport="True" Left="11,5" Top="2,72418" Width="695" Height="8,75" Fill.BackColor="15000804" Frame.Color="536870911" Frame.Typ="0"/>
+    </TfrxChild>
+  </inherited>
+  <TfrxReportPage Name="Page2" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="18,8976377952756" Left="0" Top="64,25201" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxdtsEmpreendimentos" DataSetName="frxdtsEmpreendimentos" RowCount="0">
+      <TfrxMemoView Name="frxdtsEmpreendimentosEMPREENDIMENTONOME" IndexTag="1" AllowVectorExport="True" Left="2,75" Top="-0,25" Width="319,48825" Height="18,89765" DataField="EMPREENDIMENTONOME" DataSet="frxdtsEmpreendimentos" DataSetName="frxdtsEmpreendimentos" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="11" ParentFont="False" Text="[frxdtsEmpreendimentos.&#34;EMPREENDIMENTONOME&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="2,75" Top="3,10235" Width="319,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Fill.BackColor="15000804" ParentFont="False" Text="Empreendimentos"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+  <TfrxReportPage Name="Page3" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="18,89765" Left="0" Top="64,25201" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxdtsContrato" DataSetName="frxdtsContrato" Filter="&#60;frxdtsContrato.&#34;CONTRATOVALORTOTAL&#34;&#62; &#62; 0" RowCount="0">
+      <TfrxMemoView Name="frxdtsContratoCONTRATON" IndexTag="1" AllowVectorExport="True" Left="7,75" Top="-0,64966" Width="158,74026" Height="18,89765" DataField="CONTRATON" DataSet="frxdtsContrato" DataSetName="frxdtsContrato" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="9" ParentFont="False" Text="[frxdtsContrato.&#34;CONTRATON&#34;]"/>
+      <TfrxMemoView Name="frxdtsContratoCONTRATOPREVINICIO" IndexTag="1" Align="baLeft" AllowVectorExport="True" Left="166,49026" Top="-0,64966" Width="79,37013" Height="18,89765" DataField="CONTRATOPREVINICIO" DataSet="frxdtsContrato" DataSetName="frxdtsContrato" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="11" ParentFont="False" Text="[frxdtsContrato.&#34;CONTRATOPREVINICIO&#34;]"/>
+      <TfrxMemoView Name="frxdtsContratoCONTRATOVALORTOTAL" IndexTag="1" Align="baLeft" AllowVectorExport="True" Left="245,86039" Top="-0,64966" Width="79,37013" Height="18,89765" DataField="CONTRATOVALORTOTAL" DataSet="frxdtsContrato" DataSetName="frxdtsContrato" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="10" HAlign="haRight" ParentFont="False" Text="[frxdtsContrato.&#34;CONTRATOVALORTOTAL&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="7,75" Top="1,45269" Width="158,74026" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="13" Fill.BackColor="15000804" ParentFont="False" Text="Contrato"/>
+      <TfrxMemoView Name="Memo10" Align="baLeft" AllowVectorExport="True" Left="166,49026" Top="1,45269" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Fill.BackColor="15000804" ParentFont="False" Text="Data"/>
+      <TfrxMemoView Name="Memo11" Align="baLeft" AllowVectorExport="True" Left="245,86039" Top="1,45269" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="14" Fill.BackColor="15000804" ParentFont="False" Text="Valor"/>
+    </TfrxHeader>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="105,82684" Width="718,1107">
+      <TfrxMemoView Name="Memo12" AllowVectorExport="True" Left="103,5" Top="0,17316" Width="218,23825" Height="18,89765" AutoWidth="True" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="8" HAlign="haRight" ParentFont="False" Text="Total: [SUM(&#60;frxdtsContrato.&#34;CONTRATOVALORTOTAL&#34;&#62;,MasterData3)]"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</inherited>

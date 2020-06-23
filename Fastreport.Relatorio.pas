@@ -9,7 +9,7 @@ uses
   FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, frxClass, frxDBSet, Datasnap.DBClient, frxExportRTF, frxExportHTML, frxExportBaseDialog, frxExportPDF,
-  Winapi.Windows, shellapi;
+  Winapi.Windows, shellapi, Data.FMTBcd, Data.SqlExpr;
 
 type
   TdmdRelatorio = class(TDataModule)
@@ -37,6 +37,18 @@ type
     cdsDadosData: TDateTimeField;
     cdsDadosIndice: TIntegerField;
     frxdtsDados: TfrxDBDataset;
+    cdsBiolife: TClientDataSet;
+    cdsBiolifeSpeciesNo: TFloatField;
+    cdsBiolifeCategory: TStringField;
+    cdsBiolifeCommon_Name: TStringField;
+    cdsBiolifeSpeciesName: TStringField;
+    cdsBiolifeLengthcm: TFloatField;
+    cdsBiolifeLength_In: TFloatField;
+    cdsBiolifeNotes: TMemoField;
+    cdsBiolifeGraphic: TGraphicField;
+    frxdtsBiolife: TfrxDBDataset;
+    qryContrato: TFDQuery;
+    frxdtsContrato: TfrxDBDataset;
     procedure qryClienteContratoCalcFields(DataSet: TDataSet);
   private
     { Private declarations }

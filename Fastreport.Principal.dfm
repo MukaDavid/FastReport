@@ -67,21 +67,20 @@ object frmPrincipal: TfrmPrincipal
       'Memo1')
     TabOrder = 5
   end
-  object Button1: TButton
-    Left = 320
-    Top = 160
-    Width = 75
+  object BtnRelDadosCSV: TButton
+    Left = 8
+    Top = 169
+    Width = 153
     Height = 25
-    Caption = 'Button1'
+    Caption = 'Relat'#243'rio de Dados CSV'
     TabOrder = 6
-    OnClick = Button1Click
+    OnClick = BtnRelDadosCSVClick
   end
   object DBGrid1: TDBGrid
     Left = 320
     Top = 200
     Width = 289
     Height = 145
-    DataSource = dscDados
     TabOrder = 7
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -98,6 +97,7 @@ object frmPrincipal: TfrmPrincipal
       item
         Expanded = False
         FieldName = 'Data'
+        Width = 64
         Visible = True
       end
       item
@@ -161,13 +161,16 @@ object frmPrincipal: TfrmPrincipal
         Visible = True
       end>
   end
-  object dscDados: TDataSource
-    DataSet = dmdRelatorio.cdsDados
-    Left = 160
-    Top = 128
+  object Button1: TButton
+    Left = 352
+    Top = 119
+    Width = 241
+    Height = 25
+    Caption = 'Relat'#243'rio Emprendimentos X Contratos'
+    TabOrder = 9
+    OnClick = Button1Click
   end
   object ClientDataSet1: TClientDataSet
-    Active = True
     Aggregates = <
       item
         Active = True
@@ -224,8 +227,8 @@ object frmPrincipal: TfrmPrincipal
     Params = <>
     ProviderName = 'DataSetProvider1'
     StoreDefs = True
-    Left = 88
-    Top = 128
+    Left = 40
+    Top = 408
     object ClientDataSet1CLIENTECODIGOINTERNO: TStringField
       FieldName = 'CLIENTECODIGOINTERNO'
       Origin = 'CLIENTECODIGOINTERNO'
@@ -276,12 +279,12 @@ object frmPrincipal: TfrmPrincipal
   end
   object DataSetProvider1: TDataSetProvider
     DataSet = dmdRelatorio.qryClienteContrato
-    Left = 240
-    Top = 128
+    Left = 128
+    Top = 408
   end
   object DataSource1: TDataSource
     DataSet = ClientDataSet1
-    Left = 240
-    Top = 80
+    Left = 224
+    Top = 408
   end
 end
