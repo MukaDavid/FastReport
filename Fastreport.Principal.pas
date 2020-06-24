@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Vcl.Grids, Vcl.DBGrids,
-  frxclass, midaslib, Datasnap.DBClient, Datasnap.Provider;
+  frxclass, midaslib, Datasnap.DBClient, Datasnap.Provider, frxDBSet, Vcl.Mask, Vcl.DBCtrls,
+  System.IOUtils;
 
 type
   TfrmPrincipal = class(TForm)
@@ -30,6 +31,13 @@ type
     ClientDataSet1DATAOPERACAO: TSQLTimeStampField;
     ClientDataSet1TotalUf: TAggregateField;
     Button1: TButton;
+    DBEdit1: TDBEdit;
+    frxReport1: TfrxReport;
+    btnListagemContrato: TButton;
+    lbxRelatorios: TListBox;
+    btnListarRelatorios: TButton;
+    btnExecutarRel: TButton;
+    btnAlterarComponente: TButton;
     procedure btnRelClienteClick(Sender: TObject);
     procedure btnRelClienteContratoPDFClick(Sender: TObject);
     procedure btnRelClienteContratoClick(Sender: TObject);
@@ -38,9 +46,16 @@ type
     procedure BtnRelDadosCSVClick(Sender: TObject);
     procedure DBGrid1TitleClick(Column: TColumn);
     procedure Button1Click(Sender: TObject);
+    procedure btnListagemContratoClick(Sender: TObject);
+    procedure btnListarRelatoriosClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure btnExecutarRelClick(Sender: TObject);
+    procedure btnAlterarComponenteClick(Sender: TObject);
   private
     { Private declarations }
   public
+    FListaRelatorios : TStringList;
     { Public declarations }
   end;
 
@@ -54,6 +69,43 @@ implementation
 uses Fastreport.Relatorio;
 
 
+
+procedure TfrmPrincipal.btnListagemContratoClick(Sender: TObject);
+begin
+//  dmdRelatorio.GerarRelatorio('..\..\RelContratoFiltro.fr3');
+  //frxReport1.LoadFromFile('..\..\RelContratoFiltro.fr3');
+  frxReport1.LoadFromFile('..\..\RelClienteContrato.fr3');
+  frxReport1.DesignPreviewPage;
+  frxReport1.ShowReport;
+end;
+
+procedure TfrmPrincipal.btnListarRelatoriosClick(Sender: TObject);
+var
+  lArquivos : TArray<String>;
+  lTitulo, lArquivoFR3: string;
+
+begin
+  FListaRelatorios.Clear;
+  lArquivos := TDirectory.GetFiles('..\..\','*.fr3');
+  for lArquivoFR3 in lArquivos do
+  begin
+
+    frxReport1.LoadFromFile(lArquivoFR3);
+
+    if not VarIsNull(frxReport1.Report.Variables['Titulo']) then
+      lTitulo := frxReport1.Report.Variables['Titulo']
+    else
+      lTitulo := '';
+
+    if lTitulo <> quotedstr('') then
+    begin
+      lbxRelatorios.Items.Add(lTitulo);
+      FListaRelatorios.Add(lArquivoFR3);
+    end;
+  end;
+
+
+end;
 
 procedure TfrmPrincipal.btnRelClienteClick(Sender: TObject);
 begin
@@ -89,6 +141,17 @@ begin
   dmdRelatorio.GerarRelatorio('..\..\RelEmprendimentosContratos.fr3', 'Empreendimentos x Contrato');
 end;
 
+procedure TfrmPrincipal.btnAlterarComponenteClick(Sender: TObject);
+begin
+  dmdRelatorio.AlterarMemoView;
+end;
+
+procedure TfrmPrincipal.btnExecutarRelClick(Sender: TObject);
+begin
+  dmdRelatorio.GerarRelatorio(FListaRelatorios[lbxRelatorios.ItemIndex]);
+
+end;
+
 procedure TfrmPrincipal.BtnRelDadosCSVClick(Sender: TObject);
 begin
   Memo1.Lines.Clear;
@@ -105,5 +168,15 @@ begin
   dmdRelatorio.cdsDados.IndexFieldNames := Column.FieldName;
 end;
 
+
+procedure TfrmPrincipal.FormCreate(Sender: TObject);
+begin
+  FListaRelatorios := TStringList.Create;
+end;
+
+procedure TfrmPrincipal.FormDestroy(Sender: TObject);
+begin
+  FListaRelatorios.Free;
+end;
 
 end.

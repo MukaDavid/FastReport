@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<inherited ParentReport="RelBase.fr3" EngineOptions.DoublePass="True" ReportOptions.CreateDate="44001,832277581" ReportOptions.LastChange="44001,9316951042" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+<inherited ParentReport="RelBase.fr3" EngineOptions.DoublePass="True" ReportOptions.CreateDate="44001,832277581" ReportOptions.LastChange="44005,8509738426" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
   <Datasets>
     <item DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato"/>
   </Datasets>
   <Variables>
     <item InheritedName=" Geral"/>
-    <item InheritedName="Titulo"/>
+    <item InheritedName="Titulo" Value="'Relatório de clientes por UF'"/>
   </Variables>
   <inherited Name="Data"/>
-  <inherited Name="Page1" PaperSize="9">
-    <inherited Name="ReportTitle1">
-      <inherited Name="Memo4"/>
+  <inherited Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9">
+    <inherited Name="ReportTitle1" Width="1046,92981">
+      <inherited Name="Memo4" Width="1046,92981"/>
       <inherited Name="Picture1"/>
       <inherited Name="Memo2"/>
       <inherited Name="Memo3"/>
-      <inherited Name="Memo5">
+      <inherited Name="Memo5" Left="783,17981">
         <Formats>
           <item/>
           <item/>
@@ -23,13 +23,13 @@
       </inherited>
       <inherited Name="Line1"/>
     </inherited>
-    <inherited Name="MasterData1" Height="102,67718" Top="340,1577" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Stretched="True">
+    <inherited Name="MasterData1" Height="102,67718" Top="340,1577" Width="1046,92981" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Stretched="True">
       <TfrxMemoView Name="frxdtsClienteContratoCODIGO" IndexTag="1" AllowVectorExport="True" Left="310" Top="7,09632" Width="71,81107" Height="18,89765" DataField="CODIGO" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxdtsClienteContrato.&#34;CODIGO&#34;]"/>
       <TfrxMemoView Name="frxdtsClienteContratoNOME" IndexTag="1" AllowVectorExport="True" Left="392,5" Top="7,09632" Width="400,63018" Height="18,89765" DataField="NOME" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxdtsClienteContrato.&#34;NOME&#34;]"/>
       <TfrxMemoView Name="frxdtsClienteContratoVALORTOTAL" IndexTag="1" AllowVectorExport="True" Left="806,25" Top="6,35807" Width="151,1812" Height="18,89765" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="536870911" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxdtsClienteContrato.&#34;VALORTOTAL&#34;]"/>
       <TfrxMemoView Name="frxdtsClienteContratoDATAOPERACAO" IndexTag="1" AllowVectorExport="True" Left="125" Top="7,5923" Width="178,37616" Height="18,89765" DataField="DATAOPERACAO" DataSet="frxdtsClienteContrato" DataSetName="frxdtsClienteContrato" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxdtsClienteContrato.&#34;DATAOPERACAO&#34;]"/>
     </inherited>
-    <inherited Name="PageFooter1" Top="604,7248">
+    <inherited Name="PageFooter1" Top="604,7248" Width="1046,92981">
       <inherited Name="Memo1"/>
     </inherited>
     <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="211,65368" Width="1046,92981" Condition="frxdtsClienteContrato.&#34;ENDERECOUF&#34;" ExpandDrillDown="True">

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<inherited ParentReport="RelBase.fr3" EngineOptions.DoublePass="True" ReportOptions.CreateDate="44003,8160458681" ReportOptions.LastChange="44004,6855033796" ScriptText.Text="var&#13;&#10;  List: TStringList;&#13;&#10;  i: Integer;&#13;&#10;&#13;&#10;procedure frxReport1OnStartReport_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  List := TStringList.Create;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure GroupHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if Engine.FinalPass then&#13;&#10;    MemTotal.Text := 'Total: ' + List[i];&#13;&#10;end;&#13;&#10;&#13;&#10;procedure GroupFooter1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if not Engine.FinalPass then&#13;&#10;    List.Add(FloatToStr(SUM(&#60;frxdtsBiolife.&#34;Length (cm)&#34;&#62;,MasterData1)));&#13;&#10;  Inc(i);&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;procedure frxReport1OnStopReport_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  List.Free;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Page1OnBeforePrint_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  i := 0;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo4OnBeforePrint_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  ShowMessage('ShowMessage - Memo4')&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;end." StoreInDFM="False" OnStartReport="frxReport1OnStartReport_inherited" OnStopReport="frxReport1OnStopReport_inherited">
+<inherited ParentReport="RelBase.fr3" EngineOptions.DoublePass="True" ReportOptions.CreateDate="44003,8160458681" ReportOptions.LastChange="44005,8782864583" ScriptText.Text="var&#13;&#10;  List: TStringList;&#13;&#10;  i: Integer;&#13;&#10;&#13;&#10;procedure frxReport1OnStartReport_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  List := TStringList.Create;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure GroupHeader1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if Engine.FinalPass then&#13;&#10;    MemTotal.Text := 'Total: ' + List[i];&#13;&#10;end;&#13;&#10;&#13;&#10;procedure GroupFooter1OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if not Engine.FinalPass then&#13;&#10;    List.Add(FloatToStr(SUM(&#60;frxdtsBiolife.&#34;Length (cm)&#34;&#62;,MasterData1)));&#13;&#10;  Inc(i);&#13;&#10;end;&#13;&#10;&#13;&#10;&#13;&#10;procedure frxReport1OnStopReport_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  List.Free;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Page1OnBeforePrint_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  i := 0;&#13;&#10;end;&#13;&#10;&#13;&#10;procedure Memo4OnBeforePrint_inherited(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;end." StoreInDFM="False" OnStartReport="frxReport1OnStartReport_inherited" OnStopReport="frxReport1OnStopReport_inherited">
   <Datasets>
     <item DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife"/>
   </Datasets>
   <Variables>
     <item InheritedName=" Geral"/>
-    <item InheritedName="Titulo"/>
+    <item InheritedName="Titulo" Value="'Listagem de Pesca'"/>
   </Variables>
   <inherited Name="Data"/>
-  <inherited Name="Page1" Orientation="poPortrait" PaperWidth="210" PaperHeight="297" PaperSize="9" TitleBeforeHeader="False" OnBeforePrint="Page1OnBeforePrint_inherited">
-    <inherited Name="ReportTitle1" Top="75,5906" Width="718,1107">
-      <inherited Name="Memo4" Width="718,1107" OnBeforePrint="Memo4OnBeforePrint_inherited"/>
+  <inherited Name="Page1" PaperSize="9" TitleBeforeHeader="False" OnBeforePrint="Page1OnBeforePrint_inherited">
+    <inherited Name="ReportTitle1" Top="75,5906">
+      <inherited Name="Memo4" OnBeforePrint="Memo4OnBeforePrint_inherited"/>
       <inherited Name="Picture1"/>
       <inherited Name="Memo2"/>
       <inherited Name="Memo3"/>
-      <inherited Name="Memo5" Left="454,3607">
+      <inherited Name="Memo5">
         <Formats>
           <item/>
           <item/>
@@ -22,16 +22,15 @@
         </Formats>
       </inherited>
       <inherited Name="Line1"/>
-      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="527,5" Top="71,9094" Width="94,48825" Height="18,89765" Frame.Typ="0" Text="Teste"/>
     </inherited>
-    <inherited Name="MasterData1" Height="218,92718" Top="328,81911" Width="718,1107" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Stretched="True">
+    <inherited Name="MasterData1" Height="218,92718" Top="328,81911" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Stretched="True">
       <TfrxPictureView Name="Picture2" AllowVectorExport="True" Left="502,5" Top="17,84632" Width="152,01778" Height="107,70671" DataField="Graphic" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Frame.Typ="15" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
       <TfrxMemoView Name="frxdtsBiolifeNotes" IndexTag="1" AllowVectorExport="True" Left="15,75" Top="46,59632" Width="479,37013" Height="82,52953" DataField="Notes" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" FlowTo="Memo8" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haBlock" ParentFont="False" Text="[frxdtsBiolife.&#34;Notes&#34;]"/>
       <TfrxMemoView Name="frxdtsBiolifeSpeciesNo" IndexTag="1" AllowVectorExport="True" Left="15,75" Top="15,84632" Width="79,37013" Height="18,89765" DataField="Species No" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[frxdtsBiolife.&#34;Species No&#34;]"/>
       <TfrxMemoView Name="frxdtsBiolifeCommon_Name" IndexTag="1" AllowVectorExport="True" Left="105" Top="15,84632" Width="238,11039" Height="18,89765" DataField="Common_Name" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haBlock" ParentFont="False" Text="[frxdtsBiolife.&#34;Common_Name&#34;]"/>
       <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="15,75" Top="129,54901" Width="638,75" Height="18,75" StretchMode="smActualHeight" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haBlock" ParentFont="False" Text="[frxdtsBiolife.&#34;Notes&#34;]"/>
     </inherited>
-    <inherited Name="PageFooter1" Top="665,19728" Width="718,1107">
+    <inherited Name="PageFooter1" Top="665,19728">
       <inherited Name="Memo1"/>
     </inherited>
     <TfrxGroupHeader Name="GroupHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="37,7953" Left="0" Top="268,34663" Width="718,1107" OnBeforePrint="GroupHeader1OnBeforePrint" Condition="frxdtsBiolife.&#34;Category&#34;">
@@ -40,6 +39,7 @@
     </TfrxGroupHeader>
     <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="32,67718" Left="0" Top="18,89765" Width="718,1107">
       <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="18,75" Top="7,35235" Width="94,48825" Height="18,89765" Frame.Typ="0" Text="[&#60;Page&#62;] de [&#60;TotalPages&#62;]"/>
+      <TfrxMemoView Name="memCabecalho" AllowVectorExport="True" Left="193,75" Top="6,35235" Width="309,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Teste de alteração"/>
     </TfrxPageHeader>
     <TfrxGroupFooter Name="GroupFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="34,01577" Left="0" Top="570,70903" Width="718,1107" OnBeforePrint="GroupFooter1OnBeforePrint">
       <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="602,38188" Top="3,01345" Width="94,48825" Height="18,89765" AllowHTMLTags="True" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haRight" ParentFont="False" Text="&#60;b&#62;Total:&#60;/b&#62;  [COUNT(MasterData1)]"/>

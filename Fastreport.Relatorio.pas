@@ -9,7 +9,8 @@ uses
   FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, frxClass, frxDBSet, Datasnap.DBClient, frxExportRTF, frxExportHTML, frxExportBaseDialog, frxExportPDF,
-  Winapi.Windows, shellapi, Data.FMTBcd, Data.SqlExpr;
+  Winapi.Windows, shellapi, Data.FMTBcd, Data.SqlExpr, frxDBXComponents, frxDesgn,
+  frxRich, frxDCtrl, Data.DBXFirebird, Vcl.Graphics, vcl.Forms;
 
 type
   TdmdRelatorio = class(TDataModule)
@@ -49,6 +50,9 @@ type
     frxdtsBiolife: TfrxDBDataset;
     qryContrato: TFDQuery;
     frxdtsContrato: TfrxDBDataset;
+    frxDBXComponents1: TfrxDBXComponents;
+    frxDesigner1: TfrxDesigner;
+    frxRichObject1: TfrxRichObject;
     procedure qryClienteContratoCalcFields(DataSet: TDataSet);
   private
     { Private declarations }
@@ -59,6 +63,7 @@ type
     procedure GerarRelatorio(pNomeArquivo:String); overload;
     procedure GerarRelatorio(pNomeArquivo, pTitulo: String); overload;
     procedure GerarRelatorioDeArquivo;
+    procedure AlterarMemoView;
     { Public declarations }
   end;
 
@@ -68,6 +73,8 @@ var
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses Fastreport.Preview;
 
 {$R *.dfm}
 
@@ -108,12 +115,34 @@ begin
   frxReport1.ShowReport;
 end;
 
+procedure TdmdRelatorio.AlterarMemoView;
+var
+  lfrxMemoView : TfrxMemoView;
+  lfrxPage : TfrxReportPage;
+begin
+  frxReport1.LoadFromFile('..\..\RelBiolife.fr3');
+
+  lfrxPage := frxReport1.FindComponent('Page1') as TfrxReportPage;
+  lfrxPage.PageCount := 3;
+
+  if frxReport1.FindObject('memCabecalho') <> nil then
+  begin
+    lfrxMemoView := frxReport1.FindObject('memCabecalho') as TfrxMemoView;
+    lfrxMemoView.Text := 'Este componente foi alterado pelo Delphi';
+    lfrxMemoView.Font.Color := clRed;
+  end;
+  frxReport1.ShowReport;
+
+end;
 
 procedure TdmdRelatorio.GerarRelatorio(pNomeArquivo, pTitulo: String);
 begin
   frxReport1.LoadFromFile(pNomeArquivo);
-  //frxReport1.PrepareReport;
   frxReport1.Report.Variables['Titulo'] := QuotedStr(pTitulo);
+
+  frmPreview := TfrmPreview.Create(Application);
+  frxReport1.Preview := frmPreview.frxPreview1;
+  frmPreview.Show;
   frxReport1.ShowReport;
 end;
 

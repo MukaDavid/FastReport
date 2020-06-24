@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="..\.RelBase.fr3" ReportOptions.CreateDate="44005,8100803241" ReportOptions.LastChange="44005,845839456" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}">
+  <Datasets>
+    <item DataSet="qryContrato" DataSetName="qryContrato"/>
+  </Datasets>
+  <Variables>
+    <item InheritedName=" Geral"/>
+    <item InheritedName="Titulo" Value="'Listagem de Contratos'"/>
+  </Variables>
+  <inherited Name="Data">
+    <TfrxDBXDatabase Name="DBXDatabase1" DriverName="Firebird" LoginPrompt="False" Params.Text="DriverUnit=Data.DBXFirebird&#13;&#10;DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver260.bpl&#13;&#10;DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borland.Data.DbxCommonDriver,Version=24.0.0.0,Culture=neutral,PublicKeyToken=91d62ebb5b0d1b1b&#13;&#10;MetaDataPackageLoader=TDBXFirebirdMetaDataCommandFactory,DbxFirebirdDriver260.bpl&#13;&#10;MetaDataAssemblyLoader=Borland.Data.TDBXFirebirdMetaDataCommandFactory,Borland.Data.DbxFirebirdDriver,Version=24.0.0.0,Culture=neutral,PublicKeyToken=91d62ebb5b0d1b1b&#13;&#10;GetDriverFunc=getSQLDriverINTERBASE&#13;&#10;LibraryName=dbxfb.dll&#13;&#10;LibraryNameOsx=libsqlfb.dylib&#13;&#10;VendorLib=fbclient.dll&#13;&#10;VendorLibWin64=fbclient.dll&#13;&#10;VendorLibOsx=/Library/Frameworks/Firebird.framework/Firebird&#13;&#10;Database=sistemas.rodrigues.poa.br:E:\BANCO.GDB&#13;&#10;User_Name=MUKA&#13;&#10;Password=m12345&#13;&#10;Role=RoleName&#13;&#10;MaxBlobSize=-1&#13;&#10;LocaleCode=0000&#13;&#10;IsolationLevel=ReadCommitted&#13;&#10;SQLDialect=3&#13;&#10;CommitRetain=False&#13;&#10;WaitOnLocks=True&#13;&#10;TrimChar=False&#13;&#10;BlobSize=-1&#13;&#10;ErrorResourceFile=&#13;&#10;RoleName=RoleName&#13;&#10;ServerCharSet=&#13;&#10;Trim Char=False" Connected="True" PropData="05704C65667402520470546F70022C"/>
+    <TfrxDBXQuery Name="qryContrato" UserName="qryContrato" CloseDataSource="True" FieldAliases.Text="" BCDToCurrency="False" IgnoreDupParams="False" SQL.Text="SELECT&#13;&#10;  CONTRATON,&#13;&#10;  CONTRATOPREVINICIO,&#13;&#10;  CONTRATOVALORTOTAL&#13;&#10;FROM CONTRATOS&#13;&#10;WHERE CONTRATOPREVINICIO &#62;= :DATAINI&#13;&#10;AND CONTRATOPREVINICIO &#60; :DATAFIM                                     " Database="DBXDatabase1" PropData="05704C65667402530470546F7002770A506172616D65746572730101063D204E616D653D2244415441494E49222044617461547970653D2266744461746554696D65222045787072657373696F6E3D226474496E692E44617465220001063D204E616D653D224441544146494D222044617461547970653D2266744461746554696D65222045787072657373696F6E3D22647446696D2E44617465220000"/>
+  </inherited>
+  <inherited Name="Page1" PaperSize="9">
+    <inherited Name="ReportTitle1">
+      <inherited Name="Picture1"/>
+      <inherited Name="Memo4"/>
+      <inherited Name="Memo2"/>
+      <inherited Name="Memo3"/>
+      <inherited Name="Memo5">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+      <inherited Name="Line1"/>
+    </inherited>
+    <inherited Name="MasterData1" Height="21,42718" Top="268,34663" DataSet="qryContrato" DataSetName="qryContrato">
+      <TfrxMemoView Name="qryContratoCONTRATON" IndexTag="1" AllowVectorExport="True" Left="10" Top="1,88961" Width="158,74026" Height="18,89765" DataField="CONTRATON" DataSet="qryContrato" DataSetName="qryContrato" Frame.Typ="0" Text="[qryContrato.&#34;CONTRATON&#34;]"/>
+      <TfrxMemoView Name="qryContratoCONTRATOPREVINICIO" IndexTag="1" AllowVectorExport="True" Left="193,75" Top="1,88961" Width="79,37013" Height="18,89765" DataField="CONTRATOPREVINICIO" DataSet="qryContrato" DataSetName="qryContrato" Frame.Typ="0" Text="[qryContrato.&#34;CONTRATOPREVINICIO&#34;]"/>
+      <TfrxMemoView Name="qryContratoCONTRATOVALORTOTAL" IndexTag="1" AllowVectorExport="True" Left="566,25" Top="3,13961" Width="79,37013" Height="18,89765" DataField="CONTRATOVALORTOTAL" DataSet="qryContrato" DataSetName="qryContrato" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[qryContrato.&#34;CONTRATOVALORTOTAL&#34;]"/>
+    </inherited>
+    <inherited Name="PageFooter1" Top="351,49629">
+      <inherited Name="Memo1"/>
+    </inherited>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="33,92718" Left="0" Top="173,85838" Width="718,1107">
+      <TfrxShapeView Name="Shape1" AllowVectorExport="True" Left="2,5" Top="1,39162" Width="699,10436" Height="26,39765" Fill.BackColor="15000804" Frame.Color="536870911" Frame.Typ="0"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="10" Top="5,14162" Width="158,74026" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Contrato"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="193,75" Top="5,14162" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="Data"/>
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="565" Top="5,14162" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Valor"/>
+    </TfrxPageHeader>
+  </inherited>
+  <TfrxDialogPage Name="DialogPage1" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DoubleBuffered="False" Height="204,8" ClientHeight="167,2" Left="465" Top="119" Width="277,6" Scaled="True" ClientWidth="263,2">
+    <TfrxLabelControl Name="Label1" Left="35" Top="43" Width="55" Height="13" ShowHint="True" Caption="Data inicial:" Color="-16777201"/>
+    <TfrxButtonControl Name="Button1" Left="166" Top="120" Width="75" Height="25" ShowHint="True" Caption="OK" ModalResult="1"/>
+    <TfrxDateEditControl Name="dtIni" Left="96" Top="39" Width="145" Height="21" ShowHint="True" Color="-16777211" Date="43831" Time="0,819911793980282" WeekNumbers="False"/>
+    <TfrxDateEditControl Name="dtFim" Left="96" Top="74" Width="145" Height="21" ShowHint="True" Color="-16777211" Date="44005" Time="0,820050335649285" WeekNumbers="False"/>
+    <TfrxLabelControl Name="Label2" Left="35" Top="78" Width="52" Height="13" ShowHint="True" Caption="Data Final:" Color="-16777201"/>
+  </TfrxDialogPage>
+</inherited>

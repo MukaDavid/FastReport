@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.7.4" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="167935" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="44005,9136721296" ReportOptions.Description.Text="" ReportOptions.Name="Report" ReportOptions.LastChange="44005,914311088" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxdbEmpresa" DataSetName="ppEmpresa"/>
+    <item DataSet="frxdbMoeda" DataSetName="ppMoeda"/>
+  </Datasets>
+  <Variables>
+    <item Name=" RBVariables"/>
+    <item Name="ReportMemo1" Value="''"/>
+    <item Name="ReportFilial" Value="''"/>
+    <item Name="ReportCidade" Value="''"/>
+  </Variables>
+  <TfrxDataPage Name="DataPage1" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="15" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="85,99942562" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxLineView Name="Line1" AllowVectorExport="True" Left="0" Top="66,00193239" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="DBText1" AllowVectorExport="True" Left="78,99973606" Top="8,99906093" Width="548,00161376" Height="15,99875049" AutoWidth="True" DataField="EMP_RAZAO_SOCIAL" DataSet="frxdbEmpresa" DataSetName="ppEmpresa" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[ppEmpresa.&#34;EMP_RAZAO_SOCIAL&#34;]"/>
+      <TfrxMemoView Name="Titulo" AllowVectorExport="True" Left="78,99973606" Top="32,99907643" Width="558,00225014" Height="13,99937912" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Titulo"/>
+      <TfrxPictureView Name="DBImage1" AllowVectorExport="True" Left="1,99937137" Top="0" Width="72,0000465" Height="63,99878149" DataField="LOGO" DataSet="frxdbEmpresa" DataSetName="ppEmpresa" Frame.Typ="0" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="SystemVariable1" AllowVectorExport="True" Left="658,00105488" Top="8,99906093" Width="60,00003875" Height="13,99937912" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[Date]"/>
+      <TfrxMemoView Name="SystemVariable2" AllowVectorExport="True" Left="671,00263808" Top="27,00096232" Width="46,99845555" Height="13,99937912" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[Time]"/>
+      <TfrxMemoView Name="SystemVariable6" AllowVectorExport="True" Left="643,00010031" Top="44,99908418" Width="75,00099332" Height="13,99937912" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Page [Page#] of [TotalPages#]"/>
+      <TfrxMemoView Name="Label1" AllowVectorExport="True" Left="0" Top="68,99909968" Width="144,000093" Height="12,00000775" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Descrição"/>
+      <TfrxMemoView Name="Label2" AllowVectorExport="True" Left="315,99894424" Top="68,99909968" Width="144,000093" Height="12,00000775" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Simbolo"/>
+      <TfrxMemoView Name="Label3" AllowVectorExport="True" Left="645,00325121" Top="68,99909968" Width="65,00035694" Height="12,00000775" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Valor"/>
+      <TfrxLineView Name="Line2" AllowVectorExport="True" Left="0" Top="84,00005425" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Filial" AllowVectorExport="True" Left="104,00132701" Top="51,00097782" Width="22,00064413" Height="12,00000775" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[ReportFilial]"/>
+      <TfrxMemoView Name="Label39" AllowVectorExport="True" Left="126,00197114" Top="51,00097782" Width="10,00063638" Height="12,00000775" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text=" - "/>
+      <TfrxMemoView Name="Label20" AllowVectorExport="True" Left="78,99973606" Top="51,00097782" Width="24,0000155" Height="12,00000775" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Filial: "/>
+      <TfrxMemoView Name="Cidade" AllowVectorExport="True" Left="135,99882799" Top="51,00097782" Width="222,00203314" Height="12,00000775" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[ReportCidade]"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="13,99937912" Left="0" Top="128,50402" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxdbMoeda" DataSetName="ppMoeda" RowCount="0">
+      <TfrxMemoView Name="DBText2" AllowVectorExport="True" Left="0" Top="1,99937137" Width="243,99889774" Height="12,00000775" AutoWidth="True" DataField="MOE_DESCRICAO" DataSet="frxdbMoeda" DataSetName="ppMoeda" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[ppMoeda.&#34;MOE_DESCRICAO&#34;]"/>
+      <TfrxMemoView Name="DBText3" AllowVectorExport="True" Left="318,00209514" Top="1,99937137" Width="63,99878149" Height="12,00000775" AutoWidth="True" DataField="MOE_SIMBOLO" DataSet="frxdbMoeda" DataSetName="ppMoeda" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[ppMoeda.&#34;MOE_SIMBOLO&#34;]"/>
+      <TfrxMemoView Name="DBText4" AllowVectorExport="True" Left="645,00325121" Top="1,99937137" Width="65,00035694" Height="12,00000775" AutoWidth="True" DataField="MOE_VALOR" DataSet="frxdbMoeda" DataSetName="ppMoeda" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[ppMoeda.&#34;MOE_VALOR&#34;]"/>
+    </TfrxMasterData>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="15,00095457" Left="0" Top="166,29932" Width="718,1107">
+      <TfrxMemoView Name="DBText8" AllowVectorExport="True" Left="513,00316596" Top="1,99937137" Width="205,0017072" Height="13,0015832" AutoWidth="True" DataField="versao_sistema" DataSet="frxdbEmpresa" DataSetName="ppEmpresa" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[ppEmpresa.&#34;versao_sistema&#34;]"/>
+      <TfrxLineView Name="Line9" AllowVectorExport="True" Left="0" Top="0" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxFooter>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="25,00159095" Left="0" Top="241,88992" Width="718,1107">
+      <TfrxMemoView Name="Label7" AllowVectorExport="True" Left="63,00098557" Top="8,99906093" Width="84,00005425" Height="12,00000775" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Nº Registros:"/>
+      <TfrxMemoView Name="DBCalc2" AllowVectorExport="True" Left="149,00041119" Top="8,99906093" Width="84,00005425" Height="13,0015832" AutoWidth="True" DataField="MOE_ID" DataSet="frxdbMoeda" DataSetName="ppMoeda" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[ppMoeda.&#34;MOE_ID&#34;]"/>
+      <TfrxLineView Name="Line7" AllowVectorExport="True" Left="0" Top="6,00189364" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line8" AllowVectorExport="True" Left="0" Top="24,0000155" Width="718,1107" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>

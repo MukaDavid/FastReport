@@ -1,0 +1,74 @@
+object frmPreview: TfrmPreview
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 457
+  ClientWidth = 505
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 505
+    Height = 81
+    Align = alTop
+    Caption = 'Panel1'
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 24
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'Proxima'
+      TabOrder = 0
+      OnClick = BitBtn1Click
+    end
+    object SpinEdit1: TSpinEdit
+      Left = 120
+      Top = 10
+      Width = 121
+      Height = 22
+      MaxValue = 0
+      MinValue = 0
+      TabOrder = 1
+      Value = 0
+      OnChange = SpinEdit1Change
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 416
+    Width = 505
+    Height = 41
+    Align = alBottom
+    Caption = 'Panel2'
+    TabOrder = 1
+    ExplicitLeft = 96
+    ExplicitTop = 128
+    ExplicitWidth = 185
+  end
+  object frxPreview1: TfrxPreview
+    Left = 0
+    Top = 81
+    Width = 505
+    Height = 335
+    Align = alClient
+    OutlineVisible = True
+    OutlineWidth = 121
+    ThumbnailVisible = False
+    FindFmVisible = False
+    UseReportHints = True
+    HideScrolls = False
+    ExplicitTop = 35
+    ExplicitHeight = 375
+  end
+end

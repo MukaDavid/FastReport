@@ -33,20 +33,25 @@ object dmdRelatorio: TdmdRelatorio
   end
   object frxReport1: TfrxReport
     Version = '6.7.4'
+    ParentReport = 'RelBase.fr3'
     DotMatrixReport = False
+    EngineOptions.DoublePass = True
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick, pbCopy, pbSelection]
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 44004.959441006950000000
-    ReportOptions.LastChange = 44004.959441006950000000
+    ReportOptions.CreateDate = 44003.816045868100000000
+    ReportOptions.LastChange = 44005.878286458300000000
     ScriptLanguage = 'PascalScript'
     StoreInDFM = False
+    OnStartReport = 'frxReport1OnStartReport_inherited'
+    OnStopReport = 'frxReport1OnStopReport_inherited'
     Left = 48
     Top = 96
   end
   object qryClienteContrato: TFDQuery
+    Active = True
     OnCalcFields = qryClienteContratoCalcFields
     Connection = FDConnection1
     SQL.Strings = (
@@ -69,7 +74,7 @@ object dmdRelatorio: TdmdRelatorio
       '  cli.ENDERECOCIDADE,'
       '  cli.ENDERECOUF'
       'order by cli.ENDERECOUF, cli.ENDERECOCIDADE')
-    Left = 440
+    Left = 432
     Top = 32
     object qryClienteContratoCLIENTECODIGOINTERNO: TStringField
       FieldName = 'CLIENTECODIGOINTERNO'
@@ -126,7 +131,7 @@ object dmdRelatorio: TdmdRelatorio
       'DATAOPERACAO=DATAOPERACAO')
     DataSet = qryClienteContrato
     BCDToCurrency = False
-    Left = 440
+    Left = 432
     Top = 96
   end
   object frxPDFExport1: TfrxPDFExport
@@ -210,7 +215,7 @@ object dmdRelatorio: TdmdRelatorio
         Name = 'ID'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 107
+        Value = 1
       end>
   end
   object dscClientes: TDataSource
@@ -34846,7 +34851,7 @@ object dmdRelatorio: TdmdRelatorio
         Name = 'ID'
         DataType = ftInteger
         ParamType = ptInput
-        Value = 107
+        Value = 1
       end>
   end
   object frxdtsContrato: TfrxDBDataset
@@ -34860,5 +34865,35 @@ object dmdRelatorio: TdmdRelatorio
     BCDToCurrency = False
     Left = 200
     Top = 216
+  end
+  object frxDBXComponents1: TfrxDBXComponents
+    Left = 480
+    Top = 216
+  end
+  object frxDesigner1: TfrxDesigner
+    DefaultScriptLanguage = 'PascalScript'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = -13
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = []
+    DefaultLeftMargin = 10.000000000000000000
+    DefaultRightMargin = 10.000000000000000000
+    DefaultTopMargin = 10.000000000000000000
+    DefaultBottomMargin = 10.000000000000000000
+    DefaultPaperSize = 9
+    DefaultOrientation = poPortrait
+    GradientEnd = 11982554
+    GradientStart = clWindow
+    TemplatesExt = 'fr3'
+    Restrictions = []
+    RTLLanguage = False
+    MemoParentFont = False
+    Left = 600
+    Top = 216
+  end
+  object frxRichObject1: TfrxRichObject
+    Left = 624
+    Top = 128
   end
 end

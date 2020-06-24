@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="RelBase.fr3" EngineOptions.DoublePass="True" ReportOptions.CreateDate="44003,8160458681" ReportOptions.LastChange="44005,9328126736" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False" OnStartReport="frxReport1OnStartReport_inherited" OnStopReport="frxReport1OnStopReport_inherited">
+  <Datasets>
+    <item DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife"/>
+  </Datasets>
+  <Variables>
+    <item InheritedName=" Geral"/>
+    <item InheritedName="Titulo"/>
+  </Variables>
+  <inherited Name="Data"/>
+  <TfrxReportPage Name="Page2" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="102,64765" Left="0" Top="18,89765" Width="718,1107" Columns="3" ColumnWidth="226,771653543307" ColumnGap="18,8976377952756" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" RowCount="0" Stretched="True">
+      <TfrxShapeView Name="Shape1" AllowVectorExport="True" Left="7" Top="3,60235" Width="208,75" Height="93,75" Frame.Typ="0" Shape="skRoundRectangle"/>
+      <TfrxMemoView Name="frxdtsBiolifeSpeciesNo" IndexTag="1" AllowVectorExport="True" Left="45" Top="13,25" Width="139,37013" Height="18,89765" DataField="Common_Name" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="[frxdtsBiolife.&#34;Common_Name&#34;]"/>
+      <TfrxBarCodeView Name="BarCode1" AllowVectorExport="True" Left="57,5" Top="38,60235" Width="103" Height="52,64765" BarType="bcCodeEAN13" Expression="&#60;frxdtsBiolife.&#34;Species No&#34;&#62;" Frame.Typ="0" Rotation="0" TestLine="False" Text="12345678" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" ColorBar="0"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+  <inherited Name="Page1" PaperSize="9">
+    <inherited Name="ReportTitle1">
+      <inherited Name="Picture1"/>
+      <inherited Name="Memo2"/>
+      <inherited Name="Memo3"/>
+      <inherited Name="Memo5">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+      <inherited Name="Line1"/>
+      <inherited Name="Memo4"/>
+    </inherited>
+    <inherited Name="MasterData1" Height="15,11812" Top="287,24428" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife">
+      <TfrxMemoView Name="frxdtsBiolifeCommon_Name" IndexTag="1" Align="baLeft" AllowVectorExport="True" Left="0" Top="0,13961" Width="238,11039" Height="15,11812" DataField="Common_Name" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="11" ParentFont="False" Text="[frxdtsBiolife.&#34;Common_Name&#34;]"/>
+      <TfrxMemoView Name="frxdtsBiolifeLengthcm" IndexTag="1" Align="baLeft" AllowVectorExport="True" Left="238,11039" Top="0,13961" Width="79,37013" Height="15,11812" DataField="Length (cm)" DataSet="frxdtsBiolife" DataSetName="frxdtsBiolife" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="11" ParentFont="False" Text="[frxdtsBiolife.&#34;Length (cm)&#34;]"/>
+    </inherited>
+    <inherited Name="PageFooter1" Height="31,42718" Top="767,24459">
+      <inherited Name="Memo1" Top="1,25"/>
+    </inherited>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="381,44666" Left="0" Top="362,83488" Width="718,1107" Stretched="True">
+      <TfrxChartView Name="Chart1" AllowVectorExport="True" Left="26,25" Top="21,44666" Width="681,25" Height="216,25" HighlightColor="0" Frame.Typ="0" PropData="0543686172740A340200005450463006544368617274054368617274044C656674020003546F7002000557696474680390010648656967687403FA00144261636B57616C6C2E50656E2E56697369626C65080D4672616D652E56697369626C6508165669657733444F7074696F6E732E526F746174696F6E02000A426576656C4F75746572070662764E6F6E6505436F6C6F720707636C57686974650D44656661756C7443616E766173060E54474449506C757343616E76617311436F6C6F7250616C65747465496E646578020D000A5442617253657269657307536572696573311A42617242727573682E4772616469656E742E456E64436F6C6F72042B406B001942617242727573682E4772616469656E742E56697369626C65090E436F6C6F7245616368506F696E7409074461726B50656E038200114D61726B732E466F6E742E48656967687402F70D4D61726B732E56697369626C6508144D61726B732E43616C6C6F75742E4C656E67746802040F4D61726B732E4472617745766572790202084261725374796C65070E6273526563744772616469656E740F426172576964746850657263656E740255114772616469656E742E456E64436F6C6F72042B406B00104772616469656E742E56697369626C6509084D756C746942617207066D624E6F6E650C5856616C7565732E4E616D650601580D5856616C7565732E4F72646572070B6C6F417363656E64696E670C5956616C7565732E4E616D6506034261720D5956616C7565732E4F7264657207066C6F4E6F6E650000000E4368617274456C65766174696F6E0359010A5365726965734461746101010C2B0100002044617461547970653D2264744442446174612220446174615365743D2266727864747342696F6C6966652220446174615365744E616D653D2266727864747342696F6C6966652220536F72744F726465723D22736F4E6F6E652220546F704E3D2230222058547970653D227874546578742220536F75726365313D2266727864747342696F6C6966652E262333343B436F6D6D6F6E5F4E616D65262333343B2220536F75726365323D2266727864747342696F6C6966652E262333343B4C656E6774682028636D29262333343B222058536F757263653D2266727864747342696F6C6966652E262333343B436F6D6D6F6E5F4E616D65262333343B222059536F757263653D2266727864747342696F6C6966652E262333343B4C656E6774682028636D29262333343B220000"/>
+    </TfrxReportSummary>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="53,92718" Left="0" Top="211,65368" Width="718,1107">
+      <TfrxMemoView Name="Memo6" Align="baLeft" AllowVectorExport="True" Left="0" Top="36,10807" Width="238,11039" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Common_Name"/>
+      <TfrxMemoView Name="Memo7" Align="baLeft" AllowVectorExport="True" Left="238,11039" Top="36,10807" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Length (cm)"/>
+    </TfrxHeader>
+  </inherited>
+</inherited>
