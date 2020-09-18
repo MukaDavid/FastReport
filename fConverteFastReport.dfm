@@ -110,7 +110,7 @@ object Form4: TForm4
       end>
   end
   object frxReport1: TfrxReport
-    Version = '6.7.4'
+    Version = '6.7.11'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick, pbCopy, pbSelection]
@@ -1887,6 +1887,20 @@ object Form4: TForm4
     Params = <>
     Left = 120
     Top = 280
+    object cdsMoedaMOE_ID: TIntegerField
+      FieldName = 'MOE_ID'
+    end
+    object cdsMoedaMOE_DESCRICAO: TStringField
+      FieldName = 'MOE_DESCRICAO'
+      Size = 50
+    end
+    object cdsMoedaMOE_SIMBOLO: TStringField
+      FieldName = 'MOE_SIMBOLO'
+      Size = 5
+    end
+    object cdsMoedaMOE_VALOR: TFloatField
+      FieldName = 'MOE_VALOR'
+    end
   end
   object DataSource2: TDataSource
     DataSet = cdsMoeda

@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, ConverterRB2FR, frxClass, Vcl.StdCtrls,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, frxClass, Vcl.StdCtrls,
   Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.DBCtrls, Vcl.Mask, Datasnap.DBClient,
   frxDBSet;
 
@@ -28,6 +28,10 @@ type
     DataSource2: TDataSource;
     frxdbEmpresa: TfrxDBDataset;
     frxdbMoeda: TfrxDBDataset;
+    cdsMoedaMOE_ID: TIntegerField;
+    cdsMoedaMOE_DESCRICAO: TStringField;
+    cdsMoedaMOE_SIMBOLO: TStringField;
+    cdsMoedaMOE_VALOR: TFloatField;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -44,6 +48,8 @@ implementation
 
 procedure TForm4.Button1Click(Sender: TObject);
 begin
+
+
   frxReport1.LoadFromFile('..\..\relatorio.rtm');
   frxReport1.SaveToFile('..\..\relatorio.fr3');
   //frxReport1.DesignPreviewPage;

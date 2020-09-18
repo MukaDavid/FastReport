@@ -9,13 +9,11 @@ object dmdRelatorio: TdmdRelatorio
       'Password=m12345'
       'Server=sistemas.rodrigues.poa.br'
       'DriverID=FB')
-    Connected = True
     LoginPrompt = False
     Left = 48
     Top = 32
   end
   object qryClientes: TFDQuery
-    Active = True
     Connection = FDConnection1
     SQL.Strings = (
       'select *'
@@ -51,7 +49,6 @@ object dmdRelatorio: TdmdRelatorio
     Top = 96
   end
   object qryClienteContrato: TFDQuery
-    Active = True
     OnCalcFields = qryClienteContratoCalcFields
     Connection = FDConnection1
     SQL.Strings = (
@@ -197,7 +194,6 @@ object dmdRelatorio: TdmdRelatorio
     Top = 152
   end
   object qryEmpreendimentos: TFDQuery
-    Active = True
     MasterSource = dscClientes
     MasterFields = 'ID'
     DetailFields = 'ID'
@@ -34829,7 +34825,6 @@ object dmdRelatorio: TdmdRelatorio
     Top = 216
   end
   object qryContrato: TFDQuery
-    Active = True
     MasterSource = dscClientes
     MasterFields = 'ID'
     Connection = FDConnection1
@@ -34845,7 +34840,7 @@ object dmdRelatorio: TdmdRelatorio
       '  con.empreendimentos_id = emp.id'
       'where emp.clientes_id = :ID')
     Left = 200
-    Top = 160
+    Top = 152
     ParamData = <
       item
         Name = 'ID'

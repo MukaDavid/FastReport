@@ -350,7 +350,7 @@ object frmPrincipal: TfrmPrincipal
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 44000.840901250000000000
-    ReportOptions.LastChange = 44005.859869456020000000
+    ReportOptions.LastChange = 44018.518715659720000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       ''
@@ -674,6 +674,64 @@ object frmPrincipal: TfrmPrincipal
             '[frxdtsClientes."ENDERECOUF"]')
           ParentFont = False
           Style = 'Data'
+        end
+        object Memo16: TfrxMemoView
+          AllowVectorExport = True
+          Left = 730.000000000000000000
+          Top = 1.318800000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            
+              '[<frxdtsClientes."ID"> + <frxdtsClientes."TB_REPRESENTANTES_ID">' +
+              ']')
+          ParentFont = False
+        end
+        object frxdtsClientesID: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 835.000000000000000000
+          Top = 0.216450000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          DataField = 'ID'
+          DataSet = dmdRelatorio.frxdtsClientes
+          DataSetName = 'frxdtsClientes'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            '[frxdtsClientes."ID"]')
+          ParentFont = False
+        end
+        object frxdtsClientesTB_REPRESENTANTES_ID: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 931.250000000000000000
+          Top = -1.181200000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          DataField = 'TB_REPRESENTANTES_ID'
+          DataSet = dmdRelatorio.frxdtsClientes
+          DataSetName = 'frxdtsClientes'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            '[frxdtsClientes."TB_REPRESENTANTES_ID"]')
+          ParentFont = False
         end
       end
       object PageFooter1: TfrxPageFooter

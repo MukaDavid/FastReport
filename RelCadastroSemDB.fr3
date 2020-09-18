@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="C:\Muka\Delphi\Git\FastReport-Curso-080920\RelatorioBase.fr3" ReportOptions.CreateDate="44091,9034141319" ReportOptions.LastChange="44091,9057822685" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+  <Variables>
+    <item InheritedName=" Geral"/>
+    <item InheritedName="Cidade"/>
+  </Variables>
+  <inherited Name="Data"/>
+  <inherited Name="Page1" PaperSize="9" TitleBeforeHeader="True">
+    <inherited Name="RptTitle" Top="18,89765">
+      <inherited Name="memTitulo"/>
+      <inherited Name="imgLogo"/>
+      <inherited Name="memData">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+    </inherited>
+    <inherited Name="MasterDataBand" Visible="False"/>
+    <inherited Name="PgFooter" Top="759,68553">
+      <inherited Name="memPage"/>
+    </inherited>
+    <inherited Name="pgHeader" Top="139,84261">
+      <inherited Name="memTotalPage"/>
+      <inherited Name="MemBoasFestas"/>
+    </inherited>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="430,86642" Left="0" Top="306,14193" Width="718,1107">
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="15,11812" Top="34,01577" Width="56,69295" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Nome:"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="15,11812" Top="64,25201" Width="68,03154" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Endereço:"/>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="15,89765" Top="6,55906" Width="56,69295" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Código:"/>
+      <TfrxMemoView Name="memCodigo" AllowVectorExport="True" Left="86,92919" Top="7,55906" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="1234"/>
+      <TfrxMemoView Name="memNome" AllowVectorExport="True" Left="86,92919" Top="34,01577" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="ABCDEF"/>
+      <TfrxMemoView Name="memEndereco" AllowVectorExport="True" Left="90,70872" Top="64,25201" Width="136,06308" Height="18,89765" AutoWidth="True" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="RUA BLEVERS"/>
+    </TfrxReportSummary>
+  </inherited>
+</inherited>

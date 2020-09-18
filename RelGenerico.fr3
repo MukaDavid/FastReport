@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<inherited ParentReport="C:\Muka\Delphi\Git\FastReport-Curso-080920\RelatorioBase.fr3" ReportOptions.CreateDate="44091,9483096065" ReportOptions.LastChange="44091,9491419907" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.&#13;&#10;{&#13;&#10;**********Script from parent report**********&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.&#13;&#10;}" StoreInDFM="False">
+  <Variables>
+    <item InheritedName=" Geral"/>
+    <item InheritedName="Cidade"/>
+  </Variables>
+  <inherited Name="Data"/>
+  <inherited Name="Page1" PaperSize="9" TitleBeforeHeader="True">
+    <inherited Name="RptTitle" Top="18,89765">
+      <inherited Name="memTitulo"/>
+      <inherited Name="imgLogo"/>
+      <inherited Name="memData">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </inherited>
+    </inherited>
+    <inherited Name="MasterDataBand" Top="268,34663"/>
+    <inherited Name="PgFooter" Top="351,49629">
+      <inherited Name="memPage"/>
+    </inherited>
+    <inherited Name="pgHeader" Top="139,84261">
+      <inherited Name="memTotalPage"/>
+      <inherited Name="MemBoasFestas"/>
+    </inherited>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="222,99227" Width="718,1107"/>
+  </inherited>
+</inherited>
